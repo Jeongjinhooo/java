@@ -1,4 +1,4 @@
-package sec03.brd02;
+package sec03.brd06;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
@@ -99,13 +99,12 @@ public class ArticleVO {
 	public void setImageFileName(String imageFileName) {
 		try {
 			if(imageFileName!=null && imageFileName.length()!=0) {
-				this.imageFileName = URLEncoder.encode(imageFileName, "UTF-8"); 
+				this.imageFileName = URLEncoder.encode(imageFileName, "UTF-8");  
 			}
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
 	}
-
 	public String getId() {
 		return id;
 	}
