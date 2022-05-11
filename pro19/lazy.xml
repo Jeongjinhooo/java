@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+                             "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	 <bean id="firstBean" class="com.spring.ex04.First" lazy-init="false" /> <!-- 설정파일 읽어와서 바로 메모리에 생성 -->
+    <bean id="secondBean" class="com.spring.ex04.Second" lazy-init="true" /><!-- 요청시에 읽어와서 바로 메모리에 생성 -->
+    <bean id="thirdBean" class="com.spring.ex04.Third" lazy-init="default" /><!-- 첫번쨰랑 동일하게 설정파일 읽어와서 바로 메모리에 생성 -->
+</beans>
